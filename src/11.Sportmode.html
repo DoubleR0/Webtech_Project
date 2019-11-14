@@ -1,0 +1,464 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La Foto</title>
+    <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Mitr';
+            background-color: black;
+            background-image: url("../picture/P_11.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: auto;
+            padding: 0;
+        }
+
+        h1 {
+            margin-left: 3%;
+        }
+
+        .content1 {
+            border: 1px solid #2e2e33;
+            backdrop-filter: blur(8px) contrast(.8);
+            border-radius: 25px;
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            color: white;
+            font-family: 'Mitr', sans-serif;
+            float: left;
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 3%;
+        }
+
+
+        .paragraph1 {
+            font-family: 'Mitr', sans-serif;
+            font-size: 125%;
+            text-align: unset;
+            text-indent: 10%;
+            line-height: 2;
+            width: 45%;
+            float: left;
+            margin-left: 5%;
+            margin-top: 7%;
+            z-index: 2;
+            font-weight: 1000;
+        }
+
+        .img1 {
+            max-width: 40%;
+            height: auto;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            width: 50%;
+            float: left;
+            margin-left: 2%;
+            margin-bottom: 2%;
+            z-index: 2;
+        }
+
+        .content2 {
+            border: 1px solid#2e2e33;
+            border-radius: 25px;
+            backdrop-filter: blur(8px) contrast(.8);
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            color: white;
+            font-family: 'Mitr', sans-serif;
+            float: left;
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 3%;
+        }
+
+        .paragraph2 {
+            font-family: 'Mitr', sans-serif;
+            font-size: 125%;
+            text-align: unset;
+            text-indent: 10%;
+            line-height: 2;
+            width: 45%;
+            float: left;
+            margin-left: 5%;
+            font-weight: 1000;
+        }
+
+        .img2 {
+            height: auto;
+            max-width: 100%;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            width: 40%;
+            float: right;
+            margin-right: 5%;
+            margin-bottom: 5%;
+        }
+
+        .content3 {
+            border: 1px solid#2e2e33;
+            border-radius: 25px;
+            backdrop-filter: blur(8px) contrast(.8);
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            color: white;
+            font-family: 'Mitr', sans-serif;
+            float: left;
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 3%;
+        }
+
+        .img3 {
+            height: auto;
+            max-width: 100%;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            width: 40%;
+            float: left;
+            margin-left: 4%;
+            margin-bottom: 3%;
+        }
+
+        .paragraph3 {
+            font-family: 'Mitr', sans-serif;
+            font-size: 125%;
+            text-align: unset;
+            text-indent: 10%;
+            line-height: 2;
+            width: 50%;
+            float: left;
+            margin-left: 2%;
+            margin-top: 3%;
+            font-weight: 1000;
+        }
+
+        .content4 {
+            border: 1px solid#2e2e33;
+            border-radius: 25px;
+            backdrop-filter: blur(8px) contrast(.8);
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            color: white;
+            font-family: 'Mitr', sans-serif;
+            float: left;
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        .paragraph4 {
+            font-family: 'Mitr', sans-serif;
+            font-size: 125%;
+            text-align: unset;
+            text-indent: 10%;
+            line-height: 2;
+            width: 45%;
+            float: left;
+            margin-left: 5%;
+            margin-bottom: 3%;
+            font-weight: 1000;
+        }
+
+
+        .img4 {
+            height: auto;
+            max-width: 100%;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            width: 40%;
+            float: left;
+            margin-left: 5%;
+            margin-bottom: 3%;
+        }
+
+        @media screen and (max-width:1025px) {
+            h1 {
+                font-size: 110%;
+            }
+
+            .paragraph1 {
+                font-size: 85%;
+            }
+
+            .paragraph2 {
+                font-size: 85%;
+            }
+
+            .paragraph3 {
+                font-size: 85%;
+            }
+
+            .paragraph4 {
+                font-size: 85%;
+            }
+
+        }
+
+        @media screen and (max-width:769px) {
+            h1 {
+                font-size: 100%;
+            }
+
+            .paragraph1 {
+                font-size: 65%;
+            }
+
+            .paragraph2 {
+                font-size: 65%;
+            }
+
+            .paragraph3 {
+                font-size: 65%;
+            }
+
+            .paragraph4 {
+                font-size: 65%;
+            }
+            .img2{
+                border-radius: 15px;
+            }
+
+            .img3{
+                margin-top: 2%;
+                border-radius: 15px;
+            }
+
+            .img4{
+                border-radius: 15px;
+            }
+
+        }
+
+        @media screen and (max-width:426px) {
+            h1 {
+                font-size: 150%;
+            }
+
+            .paragraph1 {
+                font-size: 100%;
+                float: left;
+                width: 95%;
+                margin-left: 4%;
+            }
+
+            .paragraph2 {
+                font-size: 100%;
+                float: left;
+                width: 95%;
+                margin-left: 4%;
+            }
+
+            .paragraph3 {
+                font-size: 100%;
+                float: left;
+                width: 95%;
+                margin-left: 4%;
+            }
+
+            .paragraph4 {
+                font-size: 100%;
+                float: left;
+                width: 95%;
+                margin-left: 4%;
+            }
+
+            .img1 {
+                border-radius: 15px;
+                max-width: 100%;
+                width: 95.5%;
+            }
+
+            .img2 {
+                border-radius: 15px;
+                max-width: 100%;
+                width: 95.5%;
+                margin-right: 2%;
+            }
+
+            .img3 {
+                border-radius: 15px;
+                max-width: 100%;
+                width: 95.5%;
+                margin-left: 2%;
+            }
+
+            .img4 {
+                border-radius: 15px;
+                max-width: 100%;
+                width: 95.5%;
+                margin-left: 2%;
+            }
+
+        }
+
+        @media screen and (min-width:2560px) {
+            h1 {
+                font-size: 300%;
+            }
+
+            .paragraph1 {
+                font-size: 225%;
+            }
+
+            .paragraph2 {
+                font-size: 225%;
+            }
+
+            .paragraph3 {
+                font-size: 225%;
+            }
+
+            .paragraph4 {
+                font-size: 225%;
+            }
+
+            .img1 {
+                border-radius: 50px;
+            }
+
+            .img2 {
+                border-radius: 50px;
+            }
+
+            .img3 {
+                border-radius: 50px;
+            }
+
+            .img4 {
+                border-radius: 50px;
+            }
+
+            .content1 {
+                border-radius: 50px;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+
+            .content2 {
+                border-radius: 50px;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+
+            .content3 {
+                border-radius: 50px;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+
+            .content4 {
+                border-radius: 50px;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+        }
+
+        #fade-it {
+            opacity: 0;
+            transition: opacity 1000ms ease-in;
+        }
+
+        #fade-it.appear {
+            opacity: 1;
+        }
+
+        .container {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="fade-it" class="content1">
+            <h1>
+                <font color=#daa37f>Sport Mode – โหมดถ่ายภาพกีฬา</font>
+            </h1><br>
+            <img class="img1" src="../picture/11.1.jpg"
+                alt="image">
+            <div class="paragraph1">
+                <p> <font color=#daa37f>โหมด Sport, Sport Mode, โหมดถ่ายภาพกีฬา</font>(เหมาะสำหรับมือใหม่สุด ที่อยากจะจับภาพที่เคลื่อนไหวด้วยความเร็วสูงให้หยุดนิ่ง เช่น เด็กวิ่ง คนวิ่ง รถวิ่ง คนกระโดด นกบิน อะไรก็ตามที่เคลื่อนที่เร็ว)
+                    โหมดนี้กล้องจะให้ความสำคัญ <font color=#daa37f>Shutter Speed</font> เป็นหลัก
+                </p>
+            </div>
+        </div>
+        
+        <div id="fade-it" class="content2">
+            <h1>
+                <font color=#daa37f>Sport Mode – โหมดถ่ายภาพกีฬา</font>
+            </h1><br>
+            <div class="paragraph2">
+                <p> เพื่อให้ได้ภาพที่หยุดนิ่ง และการโฟกัสก็จะถูกเซ็ตให้สามารถสนับสนุนการจับภาพที่รวดเร็วด้วย 
+                    เป็นโหมดที่มือใหม่ที่อยากถ่ายภาพลูก หรือเด็ก ๆ วิ่งเล่นกันครับ <font color=#daa37f>ข้อจำกัด</font> ที่ควรรู้ไว้คือ <font color=#daa37f>เมื่อความเร็วชัตเตอร์สูงขึ้น แสงจะเข้าที่กล้องน้อยลง</font> กล้องมักจะตั้งค่ารูรับแสงให้กว้าง แต่เมื่อแสงยังเข้าไม่มากพอ กล้องก็จะเริ่มขยับค่า ISO (ความไวแสง) ให้มากขึ้น เพื่อให้ปริมาณแสงเพียงพอ ข้อเสียที่ตามมาคือถ้าถ่ายในอาคาร 
+                    ในห้อง แล้วใช้โหมดนี้ โอกาสที่ Noise ในภาพจะมีค่อนข้างมาก อาจจะต้องเข้าใจข้อจำกัดนิดนึงครับ</p>
+                
+                    
+            </div>
+            <img class="img2"
+                src="../picture/11.2.jpg"
+                alt="image">
+        </div>
+        
+        <div id="fade-it" class="content3">
+            <h1>
+                <font color=#daa37f>Sport Mode – โหมดถ่ายภาพกีฬา</font>
+            </h1><br>
+            <img class="img3"
+                src="../picture/11.3.jpg"
+                alt="image">
+            <div class="paragraph3">
+                <p><font color=#daa37f>สถานการณ์ที่เหมาะจะใช้โหมด Sport</font>
+                เมื่อต้องการถ่ายภาพเด็กวิ่ง ถ่ายภาพรถวิ่งเร็ว ๆ หรือภาพกีฬาครับ 
+                เป็นโหมดกล้องที่เหมาะสำหรับมือใหม่อีกโหมดหนึ่ง ใครบอกว่าถ่ายรูปเด็กแล้วภาพเบลอ 
+                แนะนำหมุนไปโหมดนี้แล้วกดได้เลย</p>
+            </div>
+        </div>
+        <div id="fade-it" class="content2">
+            <h1>
+                <font color=#daa37f>Sport Mode – โหมดถ่ายภาพกีฬา</font>
+            </h1><br>
+            
+            <div class="paragraph2">
+                <p><font color=#daa37f>สปีดชัตเตอร์ที่เหมาะสมในการถ่าย Sport</font>
+                เมื่อต้องการถ่ายภาพการเคลื่อนที่เร็ว ๆ ให้นิ่งสนิทและมีความคมชัด จะต้องปรับ
+สปีดชัตเตอร์ให้เร็วขึ้น ให้ลองใช้สปีดชัตเตอร์ที่ <font color=#daa37f>1/500</font> แต่หากใช้สปีดชัตเตอร์ถึง <font color=#daa37f>1/1000 </font> จะช่วยให้เห็นโมเมนต์สำคัญ ๆ ที่ตาเปล่าจับภาพไม่ทันได้
+แต่การใช้สปีดชัตเตอร์เร็ว ๆ ต้องคำนึงถึงค่ารับแสงด้วย เนื่องจากม่านชัตเตอร์จะเปิดและปิดอย่างรวดเร็ว แสงจึงผ่านเข้ามาที่เซ็นเซอร์ได้น้อย และทำให้ภาพมืดได้ ดังนั้นควรเพิ่มค่า ISO และใช้รูรับแสงประมาณ f4 ถึงจะได้ภาพที่สภาพแสงพอดี</p>
+                    
+            </div>
+            <img class="img2"
+                src="../picture/11.4.jpg"
+                alt="image">
+        </div>
+        </div>     
+</body>
+<script>
+    const appearOptions = {
+        rootMargin: "0px 0px -250px 0px"
+    };
+    const fader = document.querySelectorAll("#fade-it");
+    const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) { return; } else {
+                entry.target.classList.add("appear");
+                appearOnScroll.unobserve(entry.target);
+            }
+        })
+    }, appearOptions);
+
+    fader.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+</script>
+
+</html>

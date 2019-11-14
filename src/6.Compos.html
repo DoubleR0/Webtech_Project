@@ -1,0 +1,490 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La Foto</title>
+    <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Mitr';
+            background-color: black;
+            background-image: url("../picture/P_6.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: auto;
+            padding: 0;
+        }
+
+        h1 {
+            margin-left: 3%;
+        }
+
+        .content1 {
+            border: 1px solid #2e2e33;
+            backdrop-filter: blur(8px) contrast(.8);
+            border-radius: 25px;
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            color: white;
+            font-family: 'Mitr', sans-serif;
+            float: left;
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 3%;
+        }
+
+
+        .paragraph1 {
+            font-family: 'Mitr', sans-serif;
+            font-size: 125%;
+            text-align: unset;
+            text-indent: 10%;
+            line-height: 2;
+            width: 45%;
+            float: left;
+            margin-left: 5%;
+            margin-top: 4%;
+            z-index: 2;
+            font-weight: 1000;
+            margin-top: 7%;
+        }
+
+        .img1 {
+            max-width: 40%;
+            height: auto;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            width: 50%;
+            float: left;
+            margin-left: 2%;
+            margin-bottom: 2%;
+            z-index: 2;
+        }
+
+        .content2 {
+            border: 1px solid#2e2e33;
+            border-radius: 25px;
+            backdrop-filter: blur(8px) contrast(.8);
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            color: white;
+            font-family: 'Mitr', sans-serif;
+            float: left;
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 3%;
+        }
+
+        .paragraph2 {
+            font-family: 'Mitr', sans-serif;
+            font-size: 125%;
+            text-align: unset;
+            text-indent: 10%;
+            line-height: 2;
+            width: 45%;
+            float: left;
+            margin-left: 5%;
+            font-weight: 1000;
+        }
+
+        .img2 {
+            height: auto;
+            max-width: 100%;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            width: 40%;
+            float: right;
+            margin-right: 5%;
+            margin-bottom: 5%;
+        }
+
+        .content3 {
+            border: 1px solid#2e2e33;
+            border-radius: 25px;
+            backdrop-filter: blur(8px) contrast(.8);
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            color: white;
+            font-family: 'Mitr', sans-serif;
+            float: left;
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 3%;
+        }
+
+        .img3 {
+            height: auto;
+            max-width: 100%;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            width: 40%;
+            float: left;
+            margin-left: 4%;
+            margin-bottom: 3%;
+        }
+
+        .paragraph3 {
+            font-family: 'Mitr', sans-serif;
+            font-size: 125%;
+            text-align: unset;
+            text-indent: 10%;
+            line-height: 2;
+            width: 50%;
+            float: left;
+            margin-left: 2%;
+            margin-bottom: 5%;
+            font-weight: 1000;
+        }
+
+        .content4 {
+            border: 1px solid#2e2e33;
+            border-radius: 25px;
+            backdrop-filter: blur(8px) contrast(.8);
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            color: white;
+            font-family: 'Mitr', sans-serif;
+            float: left;
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        .paragraph4 {
+            font-family: 'Mitr', sans-serif;
+            font-size: 125%;
+            text-align: unset;
+            text-indent: 10%;
+            line-height: 2;
+            width: 45%;
+            float: left;
+            margin-left: 5%;
+            margin-bottom: 3%;
+            font-weight: 1000;
+        }
+
+
+        .img4 {
+            height: auto;
+            max-width: 100%;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            width: 40%;
+            float: left;
+            margin-left: 5%;
+            margin-bottom: 3%;
+        }
+
+        @media screen and (max-width:1025px) {
+            h1 {
+                font-size: 110%;
+            }
+
+            .paragraph1 {
+                font-size: 85%;
+                margin-top: 7%;
+            }
+
+            .paragraph2 {
+                font-size: 85%;
+            }
+
+            .paragraph3 {
+                font-size: 85%;
+            }
+
+            .paragraph4 {
+                font-size: 85%;
+            }
+
+            .img4 {
+                margin-top: 3%;
+            }
+
+        }
+
+        @media screen and (max-width:769px) {
+            h1 {
+                font-size: 100%;
+            }
+
+            .paragraph1 {
+                font-size: 65%;
+            }
+
+            .paragraph2 {
+                font-size: 65%;
+            }
+
+            .paragraph3 {
+                font-size: 65%;
+            }
+
+            .paragraph4 {
+                font-size: 65%;
+            }
+
+            .img2 {
+                border-radius: 15px;
+            }
+
+            .img3 {
+                margin-top: 2%;
+                border-radius: 15px;
+            }
+
+            .img4 {
+                border-radius: 15px;
+            }
+
+        }
+
+        @media screen and (max-width:426px) {
+            h1 {
+                font-size: 150%;
+            }
+
+            .paragraph1 {
+                font-size: 100%;
+                float: left;
+                width: 95%;
+                margin-left: 4%;
+            }
+
+            .paragraph2 {
+                font-size: 100%;
+                float: left;
+                width: 95%;
+                margin-left: 4%;
+            }
+
+            .paragraph3 {
+                font-size: 100%;
+                float: left;
+                width: 95%;
+                margin-left: 4%;
+            }
+
+            .paragraph4 {
+                font-size: 100%;
+                float: left;
+                width: 95%;
+                margin-left: 4%;
+            }
+
+            .img1 {
+                border-radius: 15px;
+                max-width: 100%;
+                width: 95.5%;
+            }
+
+            .img2 {
+                border-radius: 15px;
+                max-width: 100%;
+                width: 95.5%;
+                margin-right: 2%;
+            }
+
+            .img3 {
+                border-radius: 15px;
+                max-width: 100%;
+                width: 95.5%;
+                margin-left: 2%;
+            }
+
+            .img4 {
+                border-radius: 15px;
+                max-width: 100%;
+                width: 95.5%;
+                margin-left: 2%;
+            }
+
+        }
+
+        @media screen and (min-width:2560px) {
+            h1 {
+                font-size: 300%;
+            }
+
+            .paragraph1 {
+                font-size: 225%;
+                margin-top: 7%;
+            }
+
+            .paragraph2 {
+                font-size: 225%;
+            }
+
+            .paragraph3 {
+                font-size: 225%;
+            }
+
+            .paragraph4 {
+                font-size: 225%;
+            }
+
+            .img1 {
+                border-radius: 50px;
+            }
+
+            .img2 {
+                border-radius: 50px;
+            }
+
+            .img3 {
+                border-radius: 50px;
+                margin-top: 4%;
+            }
+
+            .img4 {
+                border-radius: 50px;
+                margin-top: 4%;
+            }
+
+            .content1 {
+                border-radius: 50px;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+
+            .content2 {
+                border-radius: 50px;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+
+            .content3 {
+                border-radius: 50px;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+
+            .content4 {
+                border-radius: 50px;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+        }
+
+        #fade-it {
+            opacity: 0;
+            transition: opacity 1000ms ease-in;
+        }
+
+        #fade-it.appear {
+            opacity: 1;
+        }
+
+        .container {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="fade-it" class="content1">
+            <h1>
+                <font color=#daa37f>Composition & Rule of Third – การจัดองค์ประกอบภาพ และ กฎสามส่วน</font>
+            </h1><br>
+            <img class="img1" src="../picture/6.1.jpg" alt="image">
+            <div class="paragraph1">
+                <p>
+                    การทำให้ภาพถ่ายของเราสวยงาม ดึงดูดสายตา และน่าสนใจ สิ่งสำคัญอย่างหนึ่งก็คือการจัดองค์ประกอบภาพ<br>
+
+                    โดย <font color=#daa37f>กฎสามส่วน </font>
+                    เป็นหนึ่งในวิธีที่นิยมมากที่สุดสำหรับการจัดตำแหน่งองค์ประกอบของภาพซึ่งสิ่งนี้จะทำให้การถ่ายภาพของเราจะดูดีขึ้น
+                    สวยขึ้น และเราจะรู้สึกว่าเราจัดองค์ประกอบง่ายขึ้นด้วย</p>
+            </div>
+        </div>
+
+
+
+        <div id="fade-it" class="content2">
+            <h1>
+                <font color=#daa37f>Composition & Rule of Third – การจัดองค์ประกอบภาพ และ กฎสามส่วน</font>
+            </h1><br>
+            <div class="paragraph2">
+                <p>
+                    <font color=#daa37f>กฎสามส่วน คืออะไร (Rule of Third) ?</font></br>
+                    กฎสามส่วน คือ คือวิธีการวางตำแหน่งของวัตถุที่อยู่ในภาพของเราไม่ให้อยู่ในกลางภาพ และทำให้มันดูสมดุล
+                    ลงตัว เหมาะสม
+                    ซึ่งจะประกอบด้วยเส้นสมมุตขึ้นมา 4 เส้น คือแนวตั้งสองเส้นและแนวนอนสองเส้น
+                    โดยการจัดวางตำแหน่งที่เหมาะสมนั้นมักจะ<font color=#daa37f>วางบนจุดตัดในภาพ </font>
+                    เราชอบเรียกมันว่าจุดตัด 9 ช่อง
+                </p>
+            </div>
+            <img class="img2" src="../picture/6.2.jpg" alt="image">
+        </div>
+
+
+
+
+        <div id="fade-it" class="content3">
+            <h1>
+                <font color=#daa37f>Composition & Rule of Third – การจัดองค์ประกอบภาพ และ กฎสามส่วน</font>
+            </h1><br>
+            <img class="img3" src="../picture/6.3.jpg" alt="image">
+            <div class="paragraph3">
+                <p>
+                    <font color=#daa37f>วิธีการใช้ Rule of Third กฎสามส่วน</font><br><br>
+                    เริ่มต้นง่าย ๆ เมื่อเราได้จุดสนใจในภาพของเราแล้วให้เรา <font color=#daa37f>
+                        วางจุดสนใจตรงเส้นจุดตัดของภาพเรา</font>
+                    วัตถุในภาพไม่จำเป็นต้องวางเป๊ะ ๆ ทุกครั้ง แต่ก็ควรจะใกล้ ๆ จุดตัด
+                    เมื่อวัตถุที่เราจะเน้นให้ความสนใจวางอยู่ตรงแนวจุดตัดอย่างชัดเจน สิ่งนั้นก็จะดูโดดเด่น สวยงามง่าย ๆ
+                    อย่างที่ได้อธิบายไว้เลย
+                </p>
+            </div>
+        </div>
+
+
+
+        <div id="fade-it" class="content4">
+            <h1>
+                <font color=#daa37f>Composition & Rule of Third – การจัดองค์ประกอบภาพ และ กฎสามส่วน</font>
+            </h1><br>
+            <div class="paragraph4">
+                <p>
+                    <font color=#daa37f>ตัวอย่างการใช้กฎสามส่วน</font><br><br>
+                    ในการถ่ายภาพ Landscape การจัดตำแหน่งเส้นขอบฟ้าทั่วไปหลายคน็มักจะจัดไว้ตามแนวกึ่งกลางเฟรม
+                    แต่ถ้าหากจัดภาพด้วยกฎสามส่วนแบบนี้จะให้ความรู้สึกที่ดีขึ้นอยากชัดเจน
+                    แต่เราต้องเลือกว่าสมดุลของท้องฟ้าและภูเขา
+                    อะไรจะมีน้ำหนักมากกว่ากัน เช่น ฟ้า 2 ส่วน พื้นดิน 1 ส่วนเป็นต้น
+
+                    นอกจากนี้หาก<font color=#daa37f> เราหาจุดสนใจใส่ไว้ที่จุดตัด </font>
+                    ด้วยก็จะทำให้ภาพดูโดดเด่นและน่าสนใจมากขึ้นเลยทีเดียว
+                </p>
+            </div>
+            <img class="img4" src="../picture/6.4.jpg" alt="image">
+        </div>
+    </div>
+
+</body>
+<script>
+    const appearOptions = {
+        rootMargin: "0px 0px -250px 0px"
+    };
+    const fader = document.querySelectorAll("#fade-it");
+    const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) { return; } else {
+                entry.target.classList.add("appear");
+                appearOnScroll.unobserve(entry.target);
+            }
+        })
+    }, appearOptions);
+
+    fader.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+</script>
+
+</html>

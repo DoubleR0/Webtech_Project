@@ -1,0 +1,470 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La Foto</title>
+    <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Mitr';
+            background-color: black;
+            background-image: url("../picture/P_15.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: auto;
+            padding: 0;
+        }
+
+        h1 {
+            margin-left: 3%;
+        }
+
+        .content1 {
+            border: 1px solid #2e2e33;
+            backdrop-filter: blur(8px) contrast(.8);
+            border-radius: 25px;
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            color: white;
+            font-family: 'Mitr', sans-serif;
+            float: left;
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 3%;
+        }
+
+
+        .paragraph1 {
+            font-family: 'Mitr', sans-serif;
+            font-size: 125%;
+            text-align: unset;
+            text-indent: 10%;
+            line-height: 2;
+            width: 45%;
+            float: left;
+            margin-left: 5%;
+            margin-top: 4%;
+            z-index: 2;
+            font-weight: 1000;
+        }
+
+        .img1 {
+            max-width: 40%;
+            height: auto;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            width: 50%;
+            float: left;
+            margin-left: 2%;
+            margin-bottom: 2%;
+            z-index: 2;
+        }
+
+        .content2 {
+            border: 1px solid#2e2e33;
+            border-radius: 25px;
+            backdrop-filter: blur(8px) contrast(.8);
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            color: white;
+            font-family: 'Mitr', sans-serif;
+            float: left;
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 3%;
+        }
+
+        .paragraph2 {
+            font-family: 'Mitr', sans-serif;
+            font-size: 125%;
+            text-align: unset;
+            text-indent: 10%;
+            line-height: 2;
+            width: 45%;
+            float: left;
+            margin-left: 5%;
+            font-weight: 1000;
+        }
+
+        .img2 {
+            height: auto;
+            max-width: 100%;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            width: 40%;
+            float: right;
+            margin-right: 5%;
+            margin-bottom: 5%;
+        }
+
+        .content3 {
+            border: 1px solid#2e2e33;
+            border-radius: 25px;
+            backdrop-filter: blur(8px) contrast(.8);
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            color: white;
+            font-family: 'Mitr', sans-serif;
+            float: left;
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 3%;
+        }
+
+        .img3 {
+            height: auto;
+            max-width: 100%;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            width: 40%;
+            float: left;
+            margin-left: 4%;
+            margin-bottom: 3%;
+        }
+
+        .paragraph3 {
+            font-family: 'Mitr', sans-serif;
+            font-size: 125%;
+            text-align: unset;
+            text-indent: 10%;
+            line-height: 2;
+            width: 50%;
+            float: left;
+            margin-left: 2%;
+            margin-bottom: 5%;
+            font-weight: 1000;
+        }
+
+        .content4 {
+            border: 1px solid#2e2e33;
+            border-radius: 25px;
+            backdrop-filter: blur(8px) contrast(.8);
+            height: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            color: white;
+            font-family: 'Mitr', sans-serif;
+            float: left;
+            width: 80%;
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        .paragraph4 {
+            font-family: 'Mitr', sans-serif;
+            font-size: 125%;
+            text-align: unset;
+            text-indent: 10%;
+            line-height: 2;
+            width: 45%;
+            float: left;
+            margin-left: 5%;
+            margin-top: 5%;
+            font-weight: 1000;
+        }
+
+
+        .img4 {
+            height: auto;
+            max-width: 100%;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            width: 40%;
+            float: left;
+            margin-left: 5%;
+            margin-bottom: 3%;
+        }
+
+        @media screen and (max-width:1025px) {
+            h1 {
+                font-size: 110%;
+            }
+
+            .paragraph1 {
+                font-size: 85%;
+                margin-top: 2%;
+            }
+
+            .paragraph2 {
+                font-size: 85%;
+            }
+
+            .paragraph3 {
+                font-size: 85%;
+            }
+
+            .paragraph4 {
+                font-size: 85%;
+            }
+
+            .img4 {
+                margin-top: 3%;
+            }
+
+        }
+
+        @media screen and (max-width:769px) {
+            h1 {
+                font-size: 100%;
+            }
+
+            .paragraph1 {
+                font-size: 65%;
+            }
+
+            .paragraph2 {
+                font-size: 65%;
+            }
+
+            .paragraph3 {
+                font-size: 65%;
+            }
+
+            .paragraph4 {
+                font-size: 65%;
+            }
+
+            .img2 {
+                border-radius: 15px;
+            }
+
+            .img3 {
+                margin-top: 2%;
+                border-radius: 15px;
+            }
+
+            .img4 {
+                border-radius: 15px;
+            }
+
+        }
+
+        @media screen and (max-width:426px) {
+            h1 {
+                font-size: 150%;
+            }
+
+            .paragraph1 {
+                font-size: 100%;
+                float: left;
+                width: 95%;
+                margin-left: 4%;
+            }
+
+            .paragraph2 {
+                font-size: 100%;
+                float: left;
+                width: 95%;
+                margin-left: 4%;
+            }
+
+            .paragraph3 {
+                font-size: 100%;
+                float: left;
+                width: 95%;
+                margin-left: 4%;
+            }
+
+            .paragraph4 {
+                font-size: 100%;
+                float: left;
+                width: 95%;
+                margin-left: 4%;
+            }
+
+            .img1 {
+                border-radius: 15px;
+                max-width: 100%;
+                width: 95.5%;
+            }
+
+            .img2 {
+                border-radius: 15px;
+                max-width: 100%;
+                width: 95.5%;
+                margin-right: 2%;
+            }
+
+            .img3 {
+                border-radius: 15px;
+                max-width: 100%;
+                width: 95.5%;
+                margin-left: 2%;
+            }
+
+            .img4 {
+                border-radius: 15px;
+                max-width: 100%;
+                width: 95.5%;
+                margin-left: 2%;
+            }
+
+        }
+
+        @media screen and (min-width:2560px) {
+            h1 {
+                font-size: 300%;
+            }
+
+            .paragraph1 {
+                font-size: 225%;
+                margin-top: 1%;
+            }
+
+            .paragraph2 {
+                font-size: 225%;
+            }
+
+            .paragraph3 {
+                font-size: 225%;
+            }
+
+            .paragraph4 {
+                font-size: 225%;
+            }
+
+            .img1 {
+                border-radius: 50px;
+            }
+
+            .img2 {
+                border-radius: 50px;
+            }
+
+            .img3 {
+                border-radius: 50px;
+                margin-top: 4%;
+            }
+
+            .img4 {
+                border-radius: 50px;
+                margin-top: 4%;
+            }
+
+            .content1 {
+                border-radius: 50px;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+
+            .content2 {
+                border-radius: 50px;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+
+            .content3 {
+                border-radius: 50px;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+
+            .content4 {
+                border-radius: 50px;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+        }
+
+        #fade-it {
+            opacity: 0;
+            transition: opacity 1000ms ease-in;
+        }
+
+        #fade-it.appear {
+            opacity: 1;
+        }
+
+        .container {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="fade-it" class="content1">
+            <h1>
+                <font color=#daa37f>โหมด S – Shutter Priority</font>
+            </h1><br>
+            <img class="img1" src="../picture/15.1.jpg" alt="image">
+            <div class="paragraph1">
+                <p>
+                    <font color=#daa37f>โหมด S, TV, Shutter Priority </font><br>
+                    โหมดนี้กล้องจะให้ความสำคัญกับ <font color=#daa37f>Shutter Speed</font> เป็นหลัก โดยเราสามารถกำหนดค่า
+                    Shutter Speed ที่ต้องการไว้ ส่วนที่เหลือกล้องจะจัดการให้กับเราเองครับ
+                    เราอาจจะใช้การเซ็ต Auto อื่น ๆ ร่วมได้ เหมือนข้อก่อนหน้านี้ เช่น Auto ISO Sensitivity เป็นต้น
+                </p>
+            </div>
+        </div>
+        <div id="fade-it" class="content2">
+            <h1>
+                <font color=#daa37f>โหมด S – Shutter Priority</font>
+            </h1><br>
+            <div class="paragraph2">
+                <p>
+                    เมื่อตั้งค่าถ่ายภาพที่โหมด Shutter Speed Priority จะต้อง <font color=#daa37f>
+                        ตั้งค่าสปีดชัตเตอร์ด้วยตัวเอง</font> ส่วนกล้องจะคำนวณค่ารูรับแสงให้ สำหรับสปีดชัตเตอร์เร็วๆ
+                    ใช้เมื่อต้องการหยุดตัวแบบที่กำลังเคลื่อนที่ให้นิ่งสนิท ส่วนสปีดชัตเตอร์ช้าๆ
+                    หรือ Long Exposure จะทำให้วัตถุหรือตัวแบบที่กำลังเคลื่อนที่
+                    ดูเบลอและเป็นเส้นสายสวยงาม ขึ้นอยู่กับว่าเราอยากได้ภาพแบบไหน
+                </p>
+            </div>
+            <img class="img2" src="../picture/15.2.jpg" alt="image">
+        </div>
+        <div id="fade-it" class="content3">
+            <h1>
+                <font color=#daa37f>โหมด S – Shutter Priority</font>
+            </h1><br>
+            <img class="img3" src="../picture/15.3.jpg" alt="image">
+            <div class="paragraph3">
+                <p>
+                    <font color=#daa37f>สถานการณ์ที่เหมาะจะใช้โหมด S</font><br><br>
+                    การถ่ายภาพ <font color=#daa37f>Sport</font> ต่าง ๆ เราก็จะเซ็ตค่า Speed Shutter ที่สูงค้างไว้เลวย
+                    หรือการถ่ายภาพที่ต้องการค่า Speed Shutter ต่ำคงที่เพื่อใช้ลาก<font color=#daa37f>เส้นไฟถนน</font>
+                    เราก็สามารถเลือกตรงนี้ค้างไว้ได้เช่นเดียวกัน
+                </p>
+            </div>
+        </div>
+        <div id="fade-it" class="content4">
+            <h1>
+                <font color=#daa37f>โหมด S – Shutter Priority</font>
+            </h1><br>
+            <div class="paragraph4">
+                <p>
+                <font color=#daa37f>ตัวอย่าง</font> รูปภาพแสงไฟถนนเป็นเส้นๆโดยใช้ <font color=#daa37f>โหมด(S) Shutter
+                    Priority</font>
+                </p>
+            </div>
+            <img class="img4" src="../picture/15.4.jpg" alt="image">
+        </div>
+    </div>
+
+</body>
+<script>
+    const appearOptions = {
+        rootMargin: "0px 0px -250px 0px"
+    };
+    const fader = document.querySelectorAll("#fade-it");
+    const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) { return; } else {
+                entry.target.classList.add("appear");
+                appearOnScroll.unobserve(entry.target);
+            }
+        })
+    }, appearOptions);
+
+    fader.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+</script>
+
+</html>
