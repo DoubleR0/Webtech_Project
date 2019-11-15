@@ -1,0 +1,553 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Charm&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap');
+    .carousel-caption {
+    text-align: -webkit-auto;
+    position: absolute;
+    top: 30%;
+    width: fit-content;
+    height: fit-content;
+   padding: 30px; 
+     background-color: rgba(0,0,0,0.2); 
+    border-style: solid; 
+    border-width: 10px;
+}
+
+/*.hero {
+  height: 100vh;
+  background: url("https://f1l1-codepens.s3-us-west-2.amazonaws.com/Parallax-image-slivers/sky2.jpg") no-repeat bottom center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10vw;
+  color: #fff;
+}*/
+.hero h1 {
+  position: relative;
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 20px 0;
+}
+.hero h1::before, .hero h1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+}
+.hero h1::before {
+  left: 0;
+  border-bottom: 3px solid #0E4407;
+}
+.hero h1::after {
+  right: 0;
+  border-top: 3px solid #0E4407;
+}
+
+.main-header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  width: 100vw;
+  padding: 0 10vw;
+  color: black;
+  z-index: 1;
+  transition: .4s ease-out;
+}
+.main-header a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+}
+.main-header .nav-links {
+  display: flex;
+  list-style: none;
+}
+.main-header .nav-links .nav-link a {
+  margin: .2rem;
+  padding: 1rem .5rem;
+}
+.main-header .nav-links .nav-link a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.main-header .menu-icon {
+  position: relative;
+  padding: 26px 10px;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+.main-header .menu-icon__line {
+  display: block;
+  position: relative;
+  background: #000;
+  height: 2px;
+  width: 20px;
+  border-radius: 4px;
+}
+.main-header .menu-icon__line::before, .main-header .menu-icon__line::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  background: #000;
+  transition: background .8s ease;
+}
+.main-header .menu-icon__line::before {
+  transform: translateY(-5px);
+}
+.main-header .menu-icon__line::after {
+  transform: translateY(5px);
+}
+.main-header .menu-btn {
+  display: none;
+}
+.main-header.scrolled {
+  height: 50px;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+.main-header.scrolled .menu-icon__line, .main-header.scrolled .menu-icon__line::before, .main-header.scrolled .menu-icon__line::after {
+  background: white;
+}
+
+@media screen and (max-width: 767px) {
+  .main-header .menu-icon {
+    display: block;
+  }
+  .main-header .menu-icon__line {
+    animation: closedMid 0.8s backwards;
+    animation-direction: reverse;
+  }
+  .main-header .menu-icon__line::before {
+    animation: closedTop 0.8s backwards;
+    animation-direction: reverse;
+  }
+  .main-header .menu-icon__line::after {
+    animation: closedBtm 0.8s backwards;
+    animation-direction: reverse;
+  }
+  .main-header .nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10rem 0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 2rem;
+    color: #fff;
+    background: #272727;
+    transition: opacity .8s .5s, clip-path 1s .5s;
+    clip-path: circle(200px at top right);
+  }
+  .main-header .nav-links .nav-link {
+    opacity: 0;
+    transform: translateX(100%);
+    width: 100%;
+    text-align: center;
+  }
+  .main-header .nav-links .nav-link a {
+    display: block;
+    padding: 2rem 0;
+  }
+  .main-header .menu-btn:checked ~ .nav-links {
+    opacity: 1;
+    clip-path: circle(100% at center);
+  }
+  .main-header .menu-btn:checked ~ .nav-links .nav-link {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.4s ease-in-out, transform 0.6s cubic-bezier(0.175, 0.085, 0.32, 1.275);
+  }
+  .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(1) {
+    transition-delay: .7s;
+  }
+  .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(2) {
+    transition-delay: .8s;
+  }
+  .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(3) {
+    transition-delay: .9s;
+  }
+  .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(4) {
+    transition-delay: 1s;
+  }
+  .main-header .menu-btn:checked ~ .menu-icon {
+    border-radius: 50%;
+    animation: pulse 1s;
+  }
+  .main-header .menu-btn:checked ~ .menu-icon .menu-icon__line {
+    background: #fff;
+    animation: openMid 0.8s forwards;
+  }
+  .main-header .menu-btn:checked ~ .menu-icon .menu-icon__line::before {
+    background: white;
+    animation: openTop 0.8s forwards;
+  }
+  .main-header .menu-btn:checked ~ .menu-icon .menu-icon__line::after {
+    background: white;
+    animation: openBtm 0.8s forwards;
+  }
+}
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.6);
+  }
+  to {
+    box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0);
+  }
+}
+@keyframes openTop {
+  0% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+@keyframes closedTop {
+  0% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+@keyframes openMid {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes closedMid {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes openBtm {
+  0% {
+    transform: translateY(5px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+@keyframes closedBtm {
+  0% {
+    transform: translateY(5px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+        body {
+            background-image:url("star.jpeg");
+            /* background-size: cover;
+            background-repeat: no-repeat; */
+            font-family: 'Sriracha', cursive;
+        }
+
+        #columns {
+            column-width: 320px;
+            column-gap: 15px;
+            width: 90%;
+            max-width: 1100px;
+           
+        }
+
+        #columns figure {
+            display: inline-block;
+            /* background: black; */
+            border: 2px solid #fcfcfc;
+            box-shadow: 0 1px 2px rgba(35, 25, 25, -4);
+            margin: 0 2px 15px;
+            padding: 15px;
+            padding-bottom: 10px;
+            transition: .4s ease-in-out;
+        }
+
+        #columns figure img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 5px;
+        }
+
+        #columns:hover figure:not(:hover) {
+            opacity: 0.4;
+        }
+
+        a {
+            text-decoration-line: none;
+            color: white;
+        }
+
+        figcaption {
+            color: #fcfcfc;
+        }
+        #first{
+            margin-top: 50%;
+        }
+        @media only screen and (max-width: 600px) {
+            #columns figure{
+    margin-left: 1px;
+  }
+}
+    </style>
+</head>
+
+<body>
+    <header class="main-header" style="color: white;background-color: rgba(0, 0, 0, 0.5);">
+        <div class="logo">
+          <a href="index.html" style="font-size: 50px;">LA FOTO</a>
+        </div>
+    
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+          <span class="menu-icon__line"></span>
+        </label>
+    
+        <ul class="nav-links">
+          <li class="nav-link" style="padding-top:20px ;">
+            <a href="#" style="font-size: 30px;"> PHOTOGRAPHY</a>
+          </li>
+          <li class="nav-link" style="padding-top:20px ;">
+            <a href="selectcam.html" style="font-size: 30px;">CAMERA</a>
+          </li>
+          <li class="nav-link" style="padding-top:20px ;">
+            <a href="ninepic.html" style="font-size: 30px;">GALLERY</a>
+          </li>
+          
+        </ul>
+      </header>
+    <section id="columns" style="position:relative;
+    top:10%; left:20%;
+    ">
+        <figure><a href="IG.html"><img src="pic001.jpg">
+                <figcaption> 11 พฤศจิกายน พ.ศ.2560 ระหว่างทางกลับบ้าน <br>ยังน่ารักเหมือนเดิม ไอโบ้เจ้าเก่าประจำชายหาด(คิดถึง) ...</figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG02.html"><img src="pic002.jpg">
+                <figcaption>5 มีนาคม พ.ศ.2561 เวลา05:45 น. เป็นตอนเช้าที่พิเศษว่าทุกวันเพราะเป็นวันเกิดของพี่ชายฉัน<br>"มีความสุขมากๆนะครับ"</figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG03.html"><img src="pic003.jpg">
+                <figcaption>18 มีนาคม พ.ศ.2560 วันนี้เดินกลับบ้านนะ อีกไม่กี่อาทิตย์ก็จะจบแล้วสินะ(ชีวิตมัธยม) ชีวิตมันรวดเร็วเหมือนมอไซคันนี้แหละ</figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG04.html"><img src="pic004.jpg">
+                <figcaption>23 มกราคม พ.ศ.2560 อ่านหนังสือตั้แต่เช้า พอออกมาเจอทะเลมันช่วยให้หายเหนื่อยขึ้นเลย<br>(รักทะเล)</figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG05.html"><img src="pic005.jpg">
+                <figcaption>15 มิถุนายน พ.ศ.2561 ทำไมเราไม่เคยเบื่อทะเลเลย หรือเราคิดถึงคนที่อยู่แถวทะเล</figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG06.html"><img src="pic006.jpg">
+                <figcaption>26 เมษายน พ.ศ. 2560 มีโอกาศได้ไปดูผลงานของพวกรุ่นพี่ คุณภาพทุกชิ้นเลยครับ สถาปัตย์ก็น่าเรียนเหมือนกันนะ</figcaption>
+
+
+        </figure>
+        <figure><a href="IG07.html"><img src="pic007.jpg">
+                <figcaption>18 ธันวาคม พ.ศ. 2559 หน้าหนาวปีนีี้ไม่ค่อยหนาวเท่าไหร่ บนนี้สูงมากแต่ก็สวยมาก</figcaption>
+
+
+        </figure>
+        <figure><a href="IG08.html"><img src="pic008.jpg">
+                <figcaption>1 มกราคม พ.ศ. 2559 เวลา 00:01 น. HAPPY NEW YEAR ยินดีต้อนรับปีใหม่ รวดเร็วเหมือนเคยทุกๆปี</figcaption>
+
+
+        </figure>
+        <figure><a href="IG09.html"><img src="pic009.jpg">
+                <figcaption>18 ธันวาคม พ.ศ. 2559 ข้างบนไม่เหมือนข้างล่าง เชียงใหม่ก็ไม่เหมือนกรุงเทพ ที่นี้หนาวมากกกกกกกก</figcaption>
+
+
+        </figure>
+        <figure><a href="IG10.html"><img src="pic010.jpg">
+                <figcaption>31 ธันวาคม พ.ศ. 2559 ทุกคนออกมาส่งท้ายปีเก่าที่กำลังจะมาถึงในอีกไม่กี่ชั่วโมง 2559 เป็นปีที่รวดเร็วเหมือนเคย</figcaption>
+
+
+        </figure>
+        <figure><a href="IG11.html"><img src="pic011.jpg">
+                <figcaption>1 มกราคม พ.ศ. 2559 เป็นการเฉลิมฉลองวันขึ้นปีใหม่ที่เกิดขึ้นอีกฝั่งของชายหาดแม่รำพึง วันนี้ทุกคนดูมีความสุข</figcaption1>
+
+        </figure>
+        <figure><a href="IG12.html"><img src="pic012.jpg">
+                <figcaption>25 มีนาคม พ.ศ.2559 วันสุดท้ายของหน้าหนาว ทะเลกำลังจะกลับมาครึกครื้นอีกครั้ง</figcaption>
+
+
+        </figure>
+        <figure><a href="IG13.html"><img src="pic013.jpg">
+                <figcaption>2 พฤศภาคม พ.ศ.2561 เมื่อสายตาทอดไปเห็นแม่ลูกคู่หนึ่งกำลังลอยโคมอยู่ที่โขดหินริมชายหาดของทะเลช่างเป็นภาพที่ให้ความรู้สึกมีความ...</figcaption>
+
+
+        </figure>
+        <figure><a href="IG14.html"><img src="pic014.jpg">
+                <figcaption>11 มีนาคม พ.ศ.2559 การอยู่ให้รอดนั้นเป็นเรื่่องของร่างกาย แต่การอยู่อย่างมีความหมายนั้นเป็นเรื่องของจิตใจ </figcaption>
+
+
+        </figure>
+        <figure><a href="IG15.html"><img src="pic015.jpg">
+                <figcaption>12 มิถุนายน พ.ศ.2558 เราใช้เวลากับจุดมุ่งหมายไม่นานนัก เมื่อถึงจุดมุ่งหมายทีไร เราก็มักมองหาจุดหมายใหม่ ที่ไกลออกไปเสมอ...</figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG16.html"><img src="pic016.jpg">
+                <figcaption>23 ธันวาคม พ.ศ.2561  บางครั้งเรายอมแพ้ เพราะแค่กลัวว่าจะไม่ชนะ
+                    </figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG17.html"><img src="pic017.jpg">
+                <figcaption>24 ธันวาคม พ.ศ.2561 ความเหลวไหล มักจะ น่าหลงไหล
+                </figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG18.html"><img src="pic019.jpg">
+                <figcaption>24 ธันวาคม พ.ศ.2561 ทุกที่มีความเศร้าตราบที่เรา พกมันติดไปด้วย</figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG19.html"><img src="pic018.jpg">
+                <figcaption>24 ธันวาคม พ.ศ.2561 ความล้มเหลวไม่มีจริง เราแค่ยังไม่สำเร็จเท่านั้นเอง</figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG20.html"><img src="pic021.jpg">
+                <figcaption>13 พฤศจิกายน พ.ศ.2558 ทุกคนมีความฝัน น้อยคนยังมีมันอยู่</figcaption>
+            </a>
+
+        </figure>
+
+        <figure><a href="IG22.html"><img src="pic022.jpg">
+                <figcaption>16 มีนาคม พ.ศ.2559 ช้าในต่างแดน ดูสดใสกว่าทุกเช้า ในที่เดิมๆ อาจเพราะมันเป็นเช้าที่เต็มไปด้วยสิ่งใหม่ๆ
+                        ที่รอการไปเห็นจากเรา
+                        </figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG24.html"><img src="pic023.jpg">
+                <figcaption>1 กุมภาพันธ์ พ.ศ.2562 แสงของดวงอาทิตย์ที่กำลังจะลับขอบฟ้ากระทบกับผิวของน้ำทะเลทำให้รู้สึกอบอุ่นเหมือนดวงไฟเล็กๆที่อยู่ในหัวใจ
+                    </figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG23.html"><img src="pic020.jpg">
+                <figcaption>12 พฤศจิกายน พ.ศ.2558 ในหนึ่งชีวิตของคนเรานั่นต้องมีช่วงเวลาที่แสนโหดร้ายเราต้องเข้มเเข็งและอดทนเพื่อก้าวข้ามผ่านสิ่งต่างๆที่เราได้เจอ...</figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG25.html"><img src="pic024.jpg">
+                <figcaption>28 ธันวาคม พ.ศ.2558 มองท้องฟ้า บางคนรอสายรุ้ง บางคนรอดาวตก บางคนรอดาวหาง บางคนมีความสุขกับก้อนเมฆ</figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG26.html"><img src="pic025.jpg">
+                <figcaption>25 ธันวาคม พ.ศ.2561 อย่ารังเกียจความเศร้า มันเป็นเส้นทางระยะหนึ่ง ก่อนไปถึงความสุข</figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG27.html"><img src="pic026.jpg">
+                <figcaption>9 เมษายน พ.ศ. 2560 รุ่งอรุณของวันเก่าที่กำลังจะลับขอบฟ้าไป ทุกสิ่งบนโลกต้องดำเนินต่อไป...</figcaption>
+            </a>
+
+        </figure>
+
+
+
+        <figure><a href="IG28.html"><img src="pic027.jpg">
+                <figcaption> 13 พฤศจิกายน พ.ศ.2559 เมื่อกล้าหวัง ก็ต้องกล้าผิดหวัง
+                                        </figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG29.html"><img src="pic029.jpg">
+                <figcaption>27 กันยายน พ.ศ.2558 บางทีอดคิดไม่ได้ว่าเราเกิดมาเพื่อหาวิธีอยู่กับความเศร้าให้สุขที่สุด</figcaption>
+            </a>
+
+        </figure>
+        <figure><a href="IG30.html"><img src="pic030.jpg">
+            <figcaption>11 มีนาคม พ.ศ.2559 ทุกอย่างมีอายุขัยของมัน ความสุขก็เช่นกัน</figcaption>
+        </a>
+
+    </figure>
+    <figure><a href="IG31.html"><img src="pic031.jpg">
+        <figcaption>16 พฤศจิกายน พ.ศ.2558 เช้าในต่างแดน ดูสดใสกว่าทุกเช้า ในที่เดิมๆ อาจเพราะมันเป็นเช้าที่เต็มไปด้วยสิ่งใหม่ๆ...</figcaption>
+    </a>
+
+</figure>
+<figure><a href="IG32.html"><img src="pic032.jpg">
+    <figcaption>5 ธันวาคม พ.ศ.2558 ความสุขคนเดียวอายุสั้น ความสุขที่แบ่งปันอายุยืน</figcaption>
+</a>
+
+</figure>
+        <!-- <figure><img src="pic012.jpg">
+            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quae consequuntur quo, dolor
+                accusantium odit ut. Accusantium numquam quibusdam debitis, exercitationem explicabo facilis dicta eius
+                rerum sapiente sint atque. Ratione!</figcaption>
+
+
+        </figure> -->
+        <figure><a href="IG33.html"><img src="pic033.jpg">
+            <figcaption>6 พฤศจิกายน พ.ศ.2558 บางทีอดคิดไม่ได้ว่าเราเกิดมาเพื่อหาวิธีอยู่กับความเศร้าให้สุขที่สุด</figcaption>
+        </a>
+        
+        </figure>
+        <!-- <figure><img src="pic014.jpg">
+            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quae consequuntur quo, dolor
+                accusantium odit ut. Accusantium numquam quibusdam debitis, exercitationem explicabo facilis dicta eius
+                rerum sapiente sint atque. Ratione!</figcaption>
+
+
+        </figure> -->
+    </section>
+</body>
+
+</html>
