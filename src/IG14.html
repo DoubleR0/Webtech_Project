@@ -1,0 +1,354 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <!-- <div style="padding: 50px; background-color: #E5E4E2; display: inline-block;">Div two</div> -->
+    <center>
+        <!-- <div class="boxofgod"></div> -->
+        <div class="igframe">
+            <!-- <div class="name"></div> -->
+            <div class="boxofgod">
+                    <a href="home.html">
+                            <h2 class="nameofgod">La Foto</h2>
+                        </a>
+                <a href="ninepic.html"><img class="logo"
+                        src="cameraicon.png"
+                        alt=""></a>
+            </div>
+            <!-- <img class="dm" src="https://icon-library.net/images/direction-icon-png/direction-icon-png-3.jpg?fbclid=IwAR0Jf4RyP6FcsANc8SVEPQj7uLEC3EPSvSm-89JW6BLRHXnjTSX1qK2TuyM" alt=""> -->
+            <div class="line"></div>
+            <div class="boxpic">
+                <img class="best" src="pic014.jpg" alt="">
+            </div>
+            <div class="boxlove">
+                <!-- <i class="far fa-heart fa-4x"></i> -->
+                <img id="love" onclick="changeImage()"
+                    src="loveicon.png"
+                    alt="">
+            </div>
+            <div class="boxcomment"><img class="comment"
+                    src="commenticon.png"
+                    alt=""></div>
+            <div class="boxdm">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.it.kmitl.ac.th/~it61070165/webtec/ninepic.html"
+                    target="_blank" rel="noopener">
+                    <img class="dm"
+                        src="senticon.png"
+                        alt="">
+                </a></div>
+            <div class="boxsave">
+                    <a href="pic014.jpg" download>
+                <img class="save"
+                    src="saveicon.png"
+                    alt=""></div></a>
+
+        </div>
+
+        <div class="boxtext">
+            <p class="text1pic1">คำอธิบาย :
+                    การอยู่ให้รอดนั้นเป็นเรื่่องของร่างกาย แต่การอยู่อย่างมีความหมายนั้นเป็นเรื่องของจิตใจ
+
+                <hr>
+
+
+                <p class="text222">แนวคิด : "สงบ"<br>
+                    เทคนิค :  f/18 , 1/3 sec. , ISO-100
+                </p><br><br><br><br><br>
+                <!-- </p><br class="text2pic1"><br><br> -->
+        </div>
+    </center>
+    <!-- <i class="fal fa-paper-plane"></i> -->
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Charm&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap');
+
+    .nameofgod {
+        font-family: 'Berkshire Swash', cursive;
+        margin-top: 2%;
+        font-size: 50px;
+        /* color:black; */
+        /* background: linear-gradient(120deg, #456990 10% , #e5446d 50%, #ffe66d 80%); */
+        text-transform: uppercase;
+        background: linear-gradient(to bottom left, #553ed8, #b93580, #e31b0c, #e9ba1e);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .text1pic1 {
+        font-family: 'Sriracha', cursive;
+        color: black;
+        /* text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black; */
+        font-size: 25px;
+
+    }
+
+    .text2pic1 {
+        font-size: 20px;
+
+    }
+
+    .boxtext {
+        text-align: center;
+        width: 30%;
+        height: 60%;
+        /* background-color: black; */
+        /* color: azure; */
+        /* border-style: ridge; */
+        /* margin-left: 10%; */
+        /* float: right; */
+        display: inline-block;
+
+
+    }
+    a {
+        text-decoration-line: none;
+    }
+
+    .igframe {
+        width: 580px;
+
+        background-color: white;
+        border-style: ridge;
+        /* margin: 10px; */
+        /* background-color: #f8d3e5; */
+        margin-right: 11%;
+        display: inline-block;
+        margin-top: 5%;
+    }
+
+    .boxofgod {
+        width: 500px;
+        height: 50px;
+        /* border-style: ridge; */
+        margin-top: 2%;
+
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-right: 89%;
+        margin-top: -20%;
+    }
+
+    /* .dm{
+        width: 60px;
+        height: 60px;
+        margin-left: 0%;
+    } */
+    .line {
+        height: 2px;
+        width: 575px;
+        background-color: black;
+        margin-top: 3%;
+        /* background: linear-gradient(to bottom left, #553ed8, #b93580, #e31b0c, #e9ba1e); */
+    }
+
+    .boxpic {
+        width: 542px;
+
+        /* background: linear-gradient(to right, red, purple);
+        padding: 3px; */
+        margin-top: 4%;
+        /* border-style: solid; */
+        border: 5px solid;
+        border-image: conic-gradient(red, yellow, blue, magenta, red) 1;
+
+    }
+
+    .love {
+        width: 40px;
+        height: 40px;
+        margin-right: 93%;
+        float: left;
+
+    }
+
+    .comment {
+        width: 40px;
+        height: auto;
+        /* margin-right: 66%; */
+        /* margin-top: -8%; */
+        float: left;
+        /* display: inline-block; */
+
+    }
+
+    .dm {
+        width: 45px;
+        height: 45px;
+        margin-right: 93%;
+        float: left;
+
+    }
+
+    .save {
+        width: 35px;
+        height: 40px;
+        margin-right: 93%;
+        float: right;
+        margin-top: 10%;
+
+
+    }
+
+    #love {
+        width: 40px;
+        height: 40px;
+        margin-right: 93%;
+        float: left;
+
+    }
+
+
+    .boxlove {
+        width: 50px;
+        height: 40px;
+        /* border-style: ridge; */
+        margin-top: 1.5%;
+        /* display: inline-block; */
+        /* margin-left: -60%; */
+        float: left;
+        margin-left: 10%;
+        margin-bottom: 30px;
+    }
+
+    .boxcomment {
+        width: 50px;
+        height: 40px;
+        /* border-style: ridge; */
+        margin-top: 1.5%;
+        /* display: inline-block; */
+        /* margin-left: -60%; */
+        float: left;
+        margin-left: 3%;
+
+    }
+
+    .boxdm {
+        width: 50px;
+        height: 40px;
+        /* border-style: ridge; */
+        margin-top: 1.5%;
+        /* display: inline-block; */
+        /* margin-left: -60%; */
+        float: left;
+        margin-left: 2%;
+
+    }
+
+    .boxsave {
+        width: 50px;
+        height: 40px;
+        /* border-style: ridge; */
+        margin-top: 1.0%;
+        /* display: inline-block; */
+        /* margin-left: -60%; */
+        float: right;
+        margin-left: 2%;
+
+    }
+
+    .best {
+        margin-top: 10%;
+        width: 95%;
+        margin-bottom: 10%;
+
+    }
+
+    /* body {
+        /* background-color: #f8d3e5; */
+    /* opacity: 0.5;
+        filter: alpha(opacity=50); */
+    /* For IE8 and earlier */
+    /* body{
+            background-color: black;
+        } */
+    body {
+        background-image: url("pic014.jpg");
+        margin-top: 5%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        backdrop-filter: blur(5px);
+        margin: auto;
+        padding: 0;
+    }
+
+    .text222 {
+        font-family: 'Sriracha', cursive;
+        color: white;
+        font-size: 25px;
+    }
+
+    @media only screen and (max-width: 900px) {
+        .nameofgod {
+            font-size: 50px;
+            margin-right: 5%;
+        }
+
+        .logo {
+            margin-right: 75%;
+        }
+
+        .boxtext {
+            width: 100%;
+        }
+
+        .igframe {
+            width: 95%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .boxpic {
+            width: 95%;
+            height: auto;
+
+        }
+
+        .best {
+            margin-top: 30px;
+            width: 90%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+    }
+</style>
+<script>
+        function changeImage() {
+            element = document.getElementById('love')
+            if (element.src.match("love2icon")) {
+                element.src = "loveicon.png";
+            }
+            else {
+                element.src = "love2icon.png";
+            }
+        }
+</script>
+
+
+</html>
