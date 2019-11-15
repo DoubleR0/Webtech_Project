@@ -26,38 +26,38 @@
         <div class="igframe">
             <!-- <div class="name"></div> -->
             <div class="boxofgod">
-                    <a href="home.html">
+                    <a href="index.html">
                             <h2 class="nameofgod">La Foto</h2>
                         </a>
                 <a href="ninepic.html"><img class="logo"
-                        src="https://i.pinimg.com/originals/86/03/8b/86038b83c493a81a69a658f652027b02.png?fbclid=IwAR38C2zwHrcqnTP1VoO84NAJqYrdfPpnkSC_E3z_rjrXB-3lqF877b_MDvY"
+                        src="../picture/cameraicon.png"
                         alt=""></a>
             </div>
             <!-- <img class="dm" src="https://icon-library.net/images/direction-icon-png/direction-icon-png-3.jpg?fbclid=IwAR0Jf4RyP6FcsANc8SVEPQj7uLEC3EPSvSm-89JW6BLRHXnjTSX1qK2TuyM" alt=""> -->
             <div class="line"></div>
             <div class="boxpic">
-                <img class="best" src="pic007.jpg" alt="">
+                <img class="best" src="../picture/pic007.jpg" alt="">
             </div>
             <div class="boxlove">
                 <!-- <i class="far fa-heart fa-4x"></i> -->
                 <img id="love" onclick="changeImage()"
-                    src="https://cdn3.iconfinder.com/data/icons/basic-user-interface-application/32/INSTAGRAM_ICON_SETS-04-512.png"
+                    src="../picture/loveicon.png"
                     alt="">
             </div>
             <div class="boxcomment"><img class="comment"
-                    src="https://icon-library.net/images/instagram-comment-icon-png/instagram-comment-icon-png-6.jpg?fbclid=IwAR0ne7G8U6fxtdPFE-O5FA4D4mrCfqNekfFl8aIMlHyBSGEzORo39-idM5c"
+                    src="../picture/commenticon.png"
                     alt=""></div>
             <div class="boxdm">
                 <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.it.kmitl.ac.th/~it61070165/webtec/ninepic.html"
                     target="_blank" rel="noopener">
                     <img class="dm"
-                        src="https://qph.fs.quoracdn.net/main-qimg-094b6418c35690a0a9425642728f081b?fbclid=IwAR1jRiVioKZz1RtdqIEfCnDE-FNiYm_miakJFCNzo9Po_OO0XMVgNXxqx_M"
+                        src="../picture/senticon.png"
                         alt="">
                 </a></div>
             <div class="boxsave">
-                    <a href="pic007.jpg" download>
+                    <a href="../picture/pic007.jpg" download>
                 <img class="save"
-                    src="https://cdn3.iconfinder.com/data/icons/basic-user-interface-application/32/INSTAGRAM_ICON_SETS-07-512.png?fbclid=IwAR3cPOxzxWzKYeH4CLbIPd-VFyq_8_7FE5lECdfW2URyG16DHqqDYyZnIHQ"
+                    src="../picture/saveicon.png"
                     alt=""></div></a>
 
         </div>
@@ -286,7 +286,7 @@
             background-color: black;
         } */
     body {
-        background-image: url("pic007.jpg");
+        background-image: url("../picture/pic007.jpg");
         margin-top: 5%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -339,11 +339,11 @@
 <script>
         function changeImage() {
             element = document.getElementById('love')
-            if (element.src.match("love2icon")) {
-                element.src = "loveicon.png";
+            if (element.src.match("../picture/love2icon")) {
+                element.src = "../picture/loveicon.png";
             }
             else {
-                element.src = "love2icon.png";
+                element.src = "../picture/love2icon.png";
             }
         }
 </script>

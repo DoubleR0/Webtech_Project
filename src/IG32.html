@@ -26,38 +26,38 @@
         <div class="igframe">
             <!-- <div class="name"></div> -->
             <div class="boxofgod">
-                    <a href="home.html">
+                    <a href="index.html">
                             <h2 class="nameofgod">La Foto</h2>
                         </a>
                 <a href="ninepic.html"><img class="logo"
-                        src="cameraicon.png"
+                        src="../picture/cameraicon.png"
                         alt=""></a>
             </div>
             <!-- <img class="dm" src="https://icon-library.net/images/direction-icon-png/direction-icon-png-3.jpg?fbclid=IwAR0Jf4RyP6FcsANc8SVEPQj7uLEC3EPSvSm-89JW6BLRHXnjTSX1qK2TuyM" alt=""> -->
             <div class="line"></div>
             <div class="boxpic">
-                <img class="best" src="pic032.jpg" alt="">
+                <img class="best" src="../picture/pic032.jpg" alt="">
             </div>
             <div class="boxlove">
                 <!-- <i class="far fa-heart fa-4x"></i> -->
                 <img id="love" onclick="changeImage()"
-                    src="loveicon.png"
+                    src="../picture/loveicon.png"
                     alt="">
             </div>
             <div class="boxcomment"><img class="comment"
-                    src="commenticon.png"
+                    src="../picture/commenticon.png"
                     alt=""></div>
             <div class="boxdm">
                 <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.it.kmitl.ac.th/~it61070165/webtec/ninepic.html"
                     target="_blank" rel="noopener">
                     <img class="dm"
-                        src="senticon.png"
+                        src="../picture/senticon.png"
                         alt="">
                 </a></div>
             <div class="boxsave">
-                    <a href="pic032.jpg" download>
+                    <a href="../picture/pic032.jpg" download>
                 <img class="save"
-                    src="saveicon.png"
+                    src="../picture/saveicon.png"
                     alt=""></div></a>
 
         </div>
@@ -286,7 +286,7 @@
             background-color: black;
         } */
     body {
-        background-image: url("pic032.jpg");
+        background-image: url("../picture/pic032.jpg");
         margin-top: 5%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -340,11 +340,11 @@
 <script>
         function changeImage() {
             element = document.getElementById('love')
-            if (element.src.match("love2icon")) {
-                element.src = "loveicon.png";
+            if (element.src.match("../picture/love2icon")) {
+                element.src = "../picture/loveicon.png";
             }
             else {
-                element.src = "love2icon.png";
+                element.src = "../picture/love2icon.png";
             }
         }
     </script>
